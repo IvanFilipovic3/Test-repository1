@@ -1,0 +1,123 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Projects\\SaaS\\src\\ApiGateways\\ApiGw-Base\\ApiGw-Base.csproj": {}
+  },
+  "projects": {
+    "C:\\Projects\\SaaS\\src\\ApiGateways\\ApiGw-Base\\ApiGw-Base.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\SaaS\\src\\ApiGateways\\ApiGw-Base\\ApiGw-Base.csproj",
+        "projectName": "ApiGw-Base",
+        "projectPath": "C:\\Projects\\SaaS\\src\\ApiGateways\\ApiGw-Base\\ApiGw-Base.csproj",
+        "packagesPath": "C:\\Projects\\SaaS\\.NuGet\\packages",
+        "outputPath": "C:\\Projects\\SaaS\\src\\ApiGateways\\ApiGw-Base\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Projects\\SaaS\\NuGet.Config",
+          "C:\\Users\\e5606559\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://repo.devcloud.sungard.com/artifactory/api/nuget/fis-nuget": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "AspNetCore.HealthChecks.UI": {
+              "target": "Package",
+              "version": "[2.2.33, )"
+            },
+            "MMLib.SwaggerForOcelot": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.StaticFiles": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Http.Polly": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.9.2, )"
+            },
+            "Microsoft.VisualStudio.Azure.Kubernetes.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Ocelot": {
+              "target": "Package",
+              "version": "[13.5.2, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Serilog.Sinks.Seq": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

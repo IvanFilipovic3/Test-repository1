@@ -1,0 +1,114 @@
+﻿{
+	"ReRoutes": [
+		{
+			"DownstreamPathTemplate": "/api/Catalogue/{everything}",
+			"DownstreamScheme": "http",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "catalogue-api",
+					"Port": 80
+				}
+			],
+			"UpstreamPathTemplate": "/api/c/{everything}",
+			"UpstreamHttpMethod": [],
+			"DangerousAcceptAnyServerCertificateValidator": true,
+			"SwaggerKey": "catalogue"
+		},
+		{
+			"DownstreamPathTemplate": "/api/Orders/{everything}",
+			"DownstreamScheme": "http",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "orders-api",
+					"Port": 80
+				}
+			],
+			"UpstreamPathTemplate": "/api/o/{everything}",
+			"UpstreamHttpMethod": [ "POST", "PUT", "GET" ],
+			"DangerousAcceptAnyServerCertificateValidator": true,
+			"SwaggerKey": "orders"
+		},
+		{
+			"DownstreamPathTemplate": "/api/Order/{everything}",
+			"DownstreamScheme": "http",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "webrufappagg",
+					"Port": 80
+				}
+			],
+			"UpstreamPathTemplate": "/api/w/{everything}",
+			"UpstreamHttpMethod": [ "POST", "PUT", "GET" ],
+			"DangerousAcceptAnyServerCertificateValidator": true,
+			"SwaggerKey": "webruf"
+		},
+		{
+			"DownstreamPathTemplate": "/Index.html",
+			"DownstreamScheme": "http",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "localhost",
+					"Port": 80
+				}
+			],
+			"UpstreamPathTemplate": "/",
+			"UpstreamHttpMethod": [ "GET" ],
+			"DangerousAcceptAnyServerCertificateValidator": true
+		}
+	],
+
+	"SwaggerEndPoints": [
+		{
+			"Key": "orders",
+			"Config": [
+				{
+					"Name": "Orders API",
+					"Version": "v1",
+					"Url": "http://orders-api/swagger/v1/swagger.json"
+				}
+			]
+		},
+		{
+			"Key": "catalogue",
+			"Config": [
+				{
+					"Name": "Catalogue API",
+					"Version": "v1",
+					"Url": "http://catalogue-api/swagger/v1/swagger.json"
+				}
+			]
+		},
+		{
+			"Key": "webruf",
+			"Config": [
+				{
+					"Name": "RufApp Aggregator",
+					"Version": "v1",
+					"Url": "http://webrufappagg/swagger/v1/swagger.json"
+				}
+			]
+		}
+	],
+
+	"GlobalConfiguration": {
+		"AdministrationPath": "/administration",
+		"BaseUrl": "https://localhost:44398"
+	},
+
+	"HealthChecks-UI": {
+		"HealthChecks": [
+			{
+				"Name": "Ordering HTTP Check",
+				"Uri": "http://orders-api/hc"
+			},
+			{
+				"Name": "Catalogue HTTP Check",
+				"Uri": "http://catalogue-api/hc"
+			},
+			{
+				"Name": "WebRuf Aggregator HTTP Check",
+				"Uri": "http://webrufappagg/hc"
+			}
+		]
+	}
+}

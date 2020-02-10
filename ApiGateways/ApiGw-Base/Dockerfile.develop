@@ -1,0 +1,17 @@
+FROM mcr.microsoft.com/dotnet/core/sdk:2.2
+ARG BUILD_CONFIGURATION=Debug
+ENV ASPNETCORE_ENVIRONMENT=Development
+ENV DOTNET_USE_POLLING_FILE_WATCHER=true
+EXPOSE 443
+
+WORKDIR /src
+COPY ["src/ApiGateways/ApiGw-Base/ApiGw-Base.csproj", "src/ApiGateways/ApiGw-Base/"]
+
+RUN dotnet restore "src/ApiGateways/ApiGw-Base/ApiGw-Base.csproj"
+COPY . .
+WORKDIR "/src/src/ApiGateways/ApiGw-Base"
+RUN dotnet build --no-restore "ApiGw-Base.csproj" -c $BUILD_CONFIGURATION
+
+RUN echo "exec dotnet run --no-build --no-launch-profile -c $BUILD_CONFIGURATION --" > /entrypoint.sh
+
+ENTRYPOINT ["/bin/bash", "/entrypoint.sh"]
