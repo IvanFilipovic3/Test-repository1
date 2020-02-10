@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+@import './jerry-app-theme.scss';
+
+// Move the icon in the page headers a tiny bit down so they are more central
+ruf-page-header-icon {
+  [class*=' fis-icon-'] {
+    line-height: 2.6rem;
+  }
+}
+
+ruf-card {
+  // A ruf-card defaults to display:block. Set the direction for flex by column, so the contained
+  //   mat-card actually expands across the full width
+  flex-direction: column;
+
+  // Default left border is the same calculation as for a large padding
+  // The right and bottom margin is handled by the canvas padding
+  margin-left: $ruf-pm-div2;
+  margin-top: $ruf-pm-div2;
+}
+
+// The contents of a ruf-card have no margin, so use this style on a top level div to ensure they all match
+.ruf-card-content-margin {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+mat-card {
+  // Default left and top border is the same calculation as for a large padding.
+  // The right and bottom margin is handled by the canvas padding
+  margin-left: $ruf-pm-div2;
+  margin-top: $ruf-pm-div2;
+}

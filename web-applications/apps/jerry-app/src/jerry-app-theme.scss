@@ -1,0 +1,78 @@
+/* Importing the prebuilt color theme called "fis-gold" */
+@import '~@ruf/shell/styles/_all-theme';
+@import '~@ruf/shell/styles/_all-structure';
+
+// Import material2 color theme files
+// Here you could import only the files for the components you are using or import material's 'all-theme' file.
+// @import '~@angular/material/sidenav/_sidenav-theme.scss';
+// @import '~@angular/material/radio/_radio-theme.scss';
+@import '~@angular/material/_theming.scss';
+
+/*
+  Import the stylesheets of @ruf/material.
+  These will style material components if they have an attribute named 'fisStyle' on them
+*/
+@import '~@ruf/material/styles/all-structure.scss'; // structural styles
+@import '~@ruf/material/styles/all-theme.scss'; // color theme
+
+// Define a color theme.
+// ruf-quick-palette is useful to create a palette from a single color
+// ruf-quick-palette( base, lighter, darker )
+//$primary: ruf-quick-palette(#007d8a, #00c1d5);
+//$accent: ruf-quick-palette(#ffc845);
+//$emphasis: ruf-quick-palette(#009775);
+//$warn: ruf-quick-palette(#900);
+
+// you can override values from $ruf-light-theme-foreground and $ruf-light-theme-background here
+//$foreground: map-merge($ruf-light-theme-foreground, ()); // example: (link: #2a51dc, text: #444444)
+//$background: map-merge($ruf-light-theme-background, ());
+
+// Use custom theme colours
+//$theme: ruf-light-theme($primary, $accent, $emphasis, $warn, $foreground, $background);
+
+//Or just use the FIS default
+$theme: ruf-light-theme();
+
+// There's a bug in the RUF framework that doesn't correctly obtain some of the palettes when include ruf-theme,
+// unless they are defined here
+$background: map-get($theme, background);
+$foreground: map-get($theme, foreground);
+$primary: map-get($theme, primary);
+$accent: map-get($theme, accent);
+$emphasis: map-get($theme, emphasis);
+$warn: map-get($theme, warn);
+
+// Define custom core structural settings for the controls
+$shell-structural-config: (
+  ruf-banner: (
+    // Set the height to the minimum specified in the guideline because the default makes it too large
+      min-height: ruf-to-rem(50px),
+    // Reduce the width at which the application title disappears
+      title-mq: 'gt-xs'
+  )
+);
+
+@import '~@ruf/shell/styles/index';
+
+// Include material core styles (overlay, ripples...)
+@include mat-core();
+
+// Include all RUF color theme styles for the components.
+@include ruf-theme($theme);
+
+// Including all of material's component theme mixins.
+@include angular-material-theme($theme);
+
+// Include @ruf/material's component structural mixins and theme mixins.
+// Add a fisStyle attribute to mat-* elements to use the FIS styled material components.
+@include ruf-material-structure();
+@include ruf-material-theme($theme);
+
+// import your application's theme mixins
+@import './_all-theme.scss';
+
+// include your aggregator mixin from _all-theme.scss
+@include app-all-theme($theme);
+
+// Include mixin to override structural styling.
+@include ruf-shell-override($structural-config: $shell-structural-config);

@@ -1,0 +1,160 @@
+{
+    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "version": 1,
+    "newProjectRoot": "",
+    "projects": {
+        "jerry-app": {
+            "projectType": "application",
+            "schematics": {
+                "@nrwl/workspace:component": {
+                    "style": "scss"
+                }
+            },
+            "root": "apps/jerry-app",
+            "sourceRoot": "apps/jerry-app/src",
+            "prefix": "jerry-prefix",
+            "architect": {
+                "nswag": {
+                    "builder": "@nrwl/workspace:run-commands",
+                    "options": {
+                        "commands": [
+                            {
+                                "command": "node_modules\\.bin\\nswag run apps\\jerry-app\\src\\app\\client-proxies\\modelling-proxy.module.nswag /runtime:netcore22"
+                            },
+                            {
+                                "command": "node_modules\\.bin\\nswag run apps\\jerry-app\\src\\app\\client-proxies\\job-manager-proxy.module.nswag /runtime:netcore22"
+                            }
+                        ]
+                    }
+                },
+                "build": {
+                    "builder": "@angular-devkit/build-angular:browser",
+                    "options": {
+                        "outputPath": "dist/apps/jerry-app",
+                        "index": "apps/jerry-app/src/index.html",
+                        "main": "apps/jerry-app/src/main.ts",
+                        "polyfills": "apps/jerry-app/src/polyfills.ts",
+                        "tsConfig": "apps/jerry-app/tsconfig.app.json",
+                        "aot": false,
+                        "assets": [
+                            "apps/jerry-app/src/favicon.ico",
+                            "apps/jerry-app/src/assets"
+                        ],
+                        "styles": [
+                            "./node_modules/@ruf/fis-ux-assets/styles/icon_font.css",
+                            "apps/jerry-app/src/styles.scss"
+                        ],
+                        "scripts": []
+                    },
+                    "configurations": {
+                        "production": {
+                            "fileReplacements": [
+                                {
+                                    "replace": "apps/jerry-app/src/environments/environment.ts",
+                                    "with": "apps/jerry-app/src/environments/environment.prod.ts"
+                                }
+                            ],
+                            "optimization": true,
+                            "outputHashing": "all",
+                            "sourceMap": false,
+                            "extractCss": true,
+                            "namedChunks": false,
+                            "aot": true,
+                            "extractLicenses": true,
+                            "vendorChunk": false,
+                            "buildOptimizer": true,
+                            "budgets": [
+                                {
+                                    "type": "initial",
+                                    "maximumWarning": "2mb",
+                                    "maximumError": "5mb"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "serve": {
+                    "builder": "@angular-devkit/build-angular:dev-server",
+                    "options": {
+                        "browserTarget": "jerry-app:build",
+                        "proxyConfig": "proxy.config.json"
+                    },
+                    "configurations": {
+                        "production": {
+                            "browserTarget": "jerry-app:build:production"
+                        }
+                    }
+                },
+                "extract-i18n": {
+                    "builder": "@angular-devkit/build-angular:extract-i18n",
+                    "options": {
+                        "browserTarget": "jerry-app:build"
+                    }
+                },
+                "lint": {
+                    "builder": "@angular-devkit/build-angular:tslint",
+                    "options": {
+                        "tsConfig": [
+                            "apps/jerry-app/tsconfig.app.json",
+                            "apps/jerry-app/tsconfig.spec.json"
+                        ],
+                        "exclude": [
+                            "**/node_modules/**"
+                        ]
+                    }
+                },
+                "test": {
+                    "builder": "@nrwl/jest:jest",
+                    "options": {
+                        "jestConfig": "apps/jerry-app/jest.config.js",
+                        "tsConfig": "apps/jerry-app/tsconfig.spec.json",
+                        "setupFile": "apps/jerry-app/src/test-setup.ts"
+                    }
+                }
+            }
+        },
+        "jerry-app-e2e": {
+            "root": "apps/jerry-app-e2e",
+            "sourceRoot": "apps/jerry-app-e2e/src",
+            "projectType": "application",
+            "architect": {
+                "e2e": {
+                    "builder": "@nrwl/cypress:cypress",
+                    "options": {
+                        "cypressConfig": "apps/jerry-app-e2e/cypress.json",
+                        "tsConfig": "apps/jerry-app-e2e/tsconfig.e2e.json",
+                        "devServerTarget": "jerry-app:serve"
+                    },
+                    "configurations": {
+                        "production": {
+                            "devServerTarget": "jerry-app:serve:production"
+                        }
+                    }
+                },
+                "lint": {
+                    "builder": "@angular-devkit/build-angular:tslint",
+                    "options": {
+                        "tsConfig": "apps/jerry-app-e2e/tsconfig.e2e.json"
+                    }
+                }
+            }
+        }
+    },
+    "cli": {
+        "warnings": {
+            "typescriptMismatch": false,
+            "versionMismatch": false
+        },
+        "defaultCollection": "@ruf/schematics"
+    },
+    "schematics": {
+        "@nrwl/angular:application": {
+            "unitTestRunner": "jest",
+            "e2eTestRunner": "cypress"
+        },
+        "@nrwl/angular:library": {
+            "unitTestRunner": "jest"
+        }
+    },
+    "defaultProject": "jerry-app"
+}

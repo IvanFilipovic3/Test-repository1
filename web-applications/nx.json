@@ -1,0 +1,18 @@
+{
+  "npmScope": "jerry-app",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "jerry-app": {
+      "tags": ["scope:client"]
+    },
+    "jerry-app-e2e": {
+      "tags": []
+    }
+  }
+}

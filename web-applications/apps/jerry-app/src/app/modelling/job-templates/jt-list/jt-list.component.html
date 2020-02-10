@@ -1,0 +1,20 @@
+<jerry-prefix-cm-page-layout headerTitle="Job Templates" headerDesc="List of Job Templates" headerIcon="density1">
+    <ng-container class="page-details">
+        <mat-card title="Job Templates" fxLayout="column">
+            <p>Show me a list of Job Templates</p>
+            <table fxFlex mat-table [dataSource]="dataSource" class="ruf-striped-rows ruf-density-small" fisStyle>
+                <ng-container matColumnDef="Name">
+                    <th mat-header-cell *matHeaderCellDef>Name</th>
+                    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                </ng-container>
+                <ng-container matColumnDef="Description">
+                    <th mat-header-cell *matHeaderCellDef>Description</th>
+                    <td mat-cell *matCellDef="let element"> {{element.description}} </td>
+                </ng-container>
+                <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+                <tr mat-row *matRowDef="let row; columns: columnsToDisplay;">
+                </tr>
+            </table>
+        </mat-card>
+    </ng-container>
+</jerry-prefix-cm-page-layout>

@@ -1,0 +1,37 @@
+<!-- Set display to flex and column layout -->
+<div fxLayout="column" [style.height]="'100vh'">
+    <ruf-banner>
+        <button aria-label="Main menu" fisStyle mat-icon-button rufIconButton (click)="sidenav.toggle()">
+            <mat-icon fisIcon="menu"></mat-icon>
+        </button>
+        <ruf-banner-brand [title]="title"></ruf-banner-brand>
+    </ruf-banner>
+
+    <!-- fxFlex sets the  sidenav to fill the space (1, 1, auto) -->
+    <mat-sidenav-container fxFlex (backdropClick)="sidenav.close()">
+        <mat-sidenav mode="over" #sidenav opened="false" disableClose="true" (keydown.escape)="sidenav.close()" fisStyle
+            class="ruf-background-primary">
+            <ruf-sidemenu [selectedPath]="selectedPath()" (select)="sidenav.close(); menuSelect($event.path)" light>
+                <a rufSidemenuItem path="welcome" aria-label="Welcome">
+                    <ruf-labeled-icon fontIcon="fis-icon-approval">Welcome</ruf-labeled-icon>
+                </a>
+                <a rufSidemenuItem path="modelling/job-templates" aria-label="Job Templates">
+                    <ruf-labeled-icon fontIcon="fis-icon-density1">Job Templates</ruf-labeled-icon>
+                </a>
+                <a rufSidemenuItem path="modelling/job-template" aria-label="Edit Template">
+                    <ruf-labeled-icon fontIcon="fis-icon-edit">Edit Template</ruf-labeled-icon>
+                </a>
+            </ruf-sidemenu>
+        </mat-sidenav>
+
+        <mat-sidenav-content>
+            <ruf-app-canvas style="overflow-y: auto; padding-bottom: 0;">
+                <router-outlet></router-outlet>
+            </ruf-app-canvas>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+
+    <ruf-footer>
+        &copy; 2020 FIS
+    </ruf-footer>
+</div>

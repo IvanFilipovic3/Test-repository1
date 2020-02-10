@@ -1,0 +1,10 @@
+{
+    "/api/modelling": {
+        "target": "http://localhost:5001",
+        "secure": false
+    },
+    "/api/job-manager": {
+        "target": "http://localhost:5000",
+        "secure": false
+    }
+}

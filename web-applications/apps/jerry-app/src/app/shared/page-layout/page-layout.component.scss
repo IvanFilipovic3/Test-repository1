@@ -1,0 +1,7 @@
+// Local style sheet for the page-layout component
+
+//The host needs to be a flex, so that the header appears above the rest of the page
+:host {
+  flex: 1 1 0;
+  flex-direction: column;
+}

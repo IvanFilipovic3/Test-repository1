@@ -1,0 +1,4 @@
+{
+    "jobManagerEndPoint": "http://localhost:5000",
+    "modellingEndPoint": "http://localhost:5001"
+}

@@ -1,0 +1,21 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "types": [
+            "node",
+            "jest"
+        ],
+        "baseUrl": ".",
+        "paths": {
+            "shared/*": [
+                "src/app/shared/*"
+            ],
+            "client-proxies/*": [
+                "src/app/client-proxies/*"
+            ]
+        }
+    },
+    "include": [
+        "**/*.ts"
+    ]
+}

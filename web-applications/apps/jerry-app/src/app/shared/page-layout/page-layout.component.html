@@ -1,0 +1,17 @@
+<!-- HEADER - Start -->
+<ruf-page-header [title]="headerTitle" [description]="headerDesc" color="primary">
+    <ruf-page-header-icon>
+        <mat-icon [fisIcon]="headerIcon"></mat-icon>
+    </ruf-page-header-icon>
+</ruf-page-header>
+<!-- HEADER - End -->
+
+
+<!-- COMMON Page container - Start -->
+
+<!-- By default, we'll assume the that contents of the page will flow down as a column -->
+<section fxFlex fxLayout="column" rufPaddingBottom rufPaddingRight>
+    <ng-content select=".page-details"></ng-content>
+</section>
+
+<!-- COMMON Page container - End -->
