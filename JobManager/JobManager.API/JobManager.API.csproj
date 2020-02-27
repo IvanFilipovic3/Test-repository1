@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Prophet.SaaS.JobManager.API</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="DataAccess\Scripts\job_queue-create-procs.sql" />
+    <EmbeddedResource Include="DataAccess\Scripts\machine-history-create-procs.sql" />
+    <EmbeddedResource Include="DataAccess\Scripts\machine_activity-create-procs.sql" />
+    <EmbeddedResource Include="DataAccess\Scripts\machine_life_history-create-procs.sql" />
+    <EmbeddedResource Include="DataAccess\Scripts\service-create-db.sql" />
+    <EmbeddedResource Include="DataAccess\Scripts\service-drop-db.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="FIS.Risk.Core" Version="1.10.0" />
+	  <PackageReference Include="FIS.Risk.Core.Autofac" Version="1.7.0" />
+	  <PackageReference Include="FIS.Risk.Core.Hosting" Version="1.6.0" />
+	  <PackageReference Include="FIS.Risk.Core.Logging.Log4Net" Version="1.4.0" />
+	  <PackageReference Include="FIS.Risk.Core.MicrosoftConfiguration" Version="1.4.0" />
+	  <PackageReference Include="FIS.Risk.Core.Rest.AspNetCore3" Version="1.1.0" />
+	  <PackageReference Include="FIS.Risk.Core.ServiceHosting" Version="2.2.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.1" />	  	  
+	  <PackageReference Include="NSwag.AspNetCore" Version="13.2.2" />
+	  <PackageReference Include="NSwag.MSBuild" Version="13.2.2">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="System.Net.NameResolution" Version="4.3.0" />
+  </ItemGroup>
+	
+  <Target Name="NSwag" AfterTargets="Build">
+	  <Copy SourceFiles="@(Reference)" DestinationFolder="$(OutDir)References" />
+	  <Exec Command="$(NSwagExe_Core31) aspnetcore2swagger /assembly:$(TargetPath) /documentName:&quot;$(TargetName) v1 - Swagger&quot; /output:$(TargetName).swagger.json" />
+	  <RemoveDir Directories="$(OutDir)References" />
+  </Target>
+</Project>
