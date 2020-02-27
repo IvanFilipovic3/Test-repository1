@@ -1,0 +1,443 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "FIS.Risk.Core/1.10.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Composition.AttributedModel": "1.4.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/FIS.Risk.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/FIS.Risk.Core.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Npgsql/4.1.3": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Npgsql.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Npgsql.dll": {}
+        }
+      },
+      "Roslynator.Analyzers/2.3.0": {
+        "type": "package"
+      },
+      "SonarAnalyzer.CSharp/8.2.0.14119": {
+        "type": "package"
+      },
+      "System.Composition.AttributedModel/1.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Composition.AttributedModel.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Composition.AttributedModel.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.6.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      }
+    },
+    ".NETCoreApp,Version=v3.1/linux-x64": {
+      "FIS.Risk.Core/1.10.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Composition.AttributedModel": "1.4.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/FIS.Risk.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/FIS.Risk.Core.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Npgsql/4.1.3": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Npgsql.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Npgsql.dll": {}
+        }
+      },
+      "Roslynator.Analyzers/2.3.0": {
+        "type": "package"
+      },
+      "SonarAnalyzer.CSharp/8.2.0.14119": {
+        "type": "package"
+      },
+      "System.Composition.AttributedModel/1.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Composition.AttributedModel.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Composition.AttributedModel.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.6.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FIS.Risk.Core/1.10.0": {
+      "sha512": "ZjvTuSa2JuRgYsPP+EuF/kl/y5zQJ8oMxTWHEQ9Szg17WydJday+9zr17CMcB6OK+g67Z6u9sMeWCKNd+s6nSQ==",
+      "type": "package",
+      "path": "fis.risk.core/1.10.0",
+      "files": [
+        ".nupkg.metadata",
+        "fis.risk.core.1.10.0.nupkg.sha512",
+        "fis.risk.core.nuspec",
+        "lib/netcoreapp3.1/FIS.Risk.Core.dll",
+        "lib/netcoreapp3.1/FIS.Risk.Core.pdb",
+        "lib/netcoreapp3.1/FIS.Risk.Core.xml",
+        "lib/netstandard2.0/FIS.Risk.Core.dll",
+        "lib/netstandard2.0/FIS.Risk.Core.pdb",
+        "lib/netstandard2.0/FIS.Risk.Core.xml",
+        "src/Core/CommonGlobals.cs",
+        "src/Core/Composition/CommandLineArguments.cs",
+        "src/Core/Composition/DefaultServiceProvider.cs",
+        "src/Core/Composition/IDependencyContainer.cs",
+        "src/Core/Composition/IDependencyContainerBuilder.cs",
+        "src/Core/Composition/IPluginConfigurationProvider.cs",
+        "src/Core/Composition/IPluginRegistration.cs",
+        "src/Core/Composition/IRegistered.cs",
+        "src/Core/Composition/IRegistry.cs",
+        "src/Core/Composition/Registry.cs",
+        "src/Core/Configuration/ConfigurationException.cs",
+        "src/Core/Configuration/ConfigurationExtensions.cs",
+        "src/Core/Configuration/IConfiguration.cs",
+        "src/Core/Configuration/IConfigurationDiagnostics.cs",
+        "src/Core/Configuration/IConfigurationDictionary.cs",
+        "src/Core/Configuration/IConfigurationList.cs",
+        "src/Core/Configuration/IWritableConfiguration.cs",
+        "src/Core/Configuration/NullConfiguration.cs",
+        "src/Core/FIS.Risk.Core.csproj",
+        "src/Core/Globals.cs",
+        "src/Core/Logging/AsyncBaseLogger.cs",
+        "src/Core/Logging/BaseLogger.cs",
+        "src/Core/Logging/BasicFileLogger.cs",
+        "src/Core/Logging/ILogging.cs",
+        "src/Core/Logging/LogEntryDetails.cs",
+        "src/Core/Logging/LogEntrySeverity.cs",
+        "src/Core/Logging/LogScope.cs",
+        "src/Core/Logging/NullLogger.cs",
+        "src/Core/Logging/TransformLogger.cs",
+        "src/Core/Properties/Resources.Designer.cs",
+        "src/Core/Properties/Resources.resx",
+        "src/Core/Security/CertificateFinder.cs",
+        "src/Core/Security/CertificateValidator.cs",
+        "src/Core/Services/ICommunicationService.cs",
+        "src/Core/Services/ICommunicationServiceFactory.cs",
+        "src/Core/SlaveProcess/ProcessConstants.cs",
+        "src/Core/SlaveProcess/SlaveProcessChild.cs",
+        "src/Core/SlaveProcess/SlaveProcessException.cs",
+        "src/Core/SlaveProcess/SlaveProcessMsgHandler.cs",
+        "src/Core/SlaveProcess/SlaveProcessRunner.cs",
+        "src/Core/Utilities/AggregateDisposable.cs",
+        "src/Core/Utilities/ArrayComparers.cs",
+        "src/Core/Utilities/AssemblySemanticallyVersionedAttribute.cs",
+        "src/Core/Utilities/AsyncQueueProcessor.cs",
+        "src/Core/Utilities/AutoDisposer.cs",
+        "src/Core/Utilities/BackgroundThread.cs",
+        "src/Core/Utilities/DictionaryExtensions.cs",
+        "src/Core/Utilities/Disposable.cs",
+        "src/Core/Utilities/Ensure.cs",
+        "src/Core/Utilities/EnumerableExtensions.cs",
+        "src/Core/Utilities/HashCodeHelper.cs",
+        "src/Core/Utilities/NotNullWhenAttribute.cs",
+        "src/Core/Utilities/ObjectEqualityComparer.cs",
+        "src/Core/Utilities/Retry.cs",
+        "src/Core/Utilities/RetryException.cs",
+        "src/Core/Utilities/SerializableWrapper.cs",
+        "src/Core/Utilities/StringExtensions.cs",
+        "src/Core/Utilities/TypeExtensions.cs",
+        "src/Core/Utilities/UnmanagedDisposable.cs",
+        "src/Core/Utilities/UnreachableCodeException.cs",
+        "src/Core/Utilities/WritableLazy.cs",
+        "src/Core/Xml/DetailedXmlException.cs",
+        "src/Core/Xml/DisableExternalEntityXmlResolver.cs",
+        "src/Core/Xml/LineInfo.cs",
+        "src/Core/Xml/XObjectExtensions.cs",
+        "src/Core/Xml/XmlExtensions.cs"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.0": {
+      "sha512": "44rDtOf1JXXAFpNT2EXMExaDm/4OJ2RXOL9i9lE4bK427nzC7Exphv+beB6IgluyE2GIoo8zezTStMXI7MQ8WA==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.3.1.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Npgsql/4.1.3": {
+      "sha512": "sWTXCb6WPPO7WEw4+1XoRqE49EdWmuyMA15LVbzV6jZgRxYWK8TbdniWMjguzmAgOZVYTmrCf+jsqPYoSqACvA==",
+      "type": "package",
+      "path": "npgsql/4.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Npgsql.dll",
+        "lib/net461/Npgsql.pdb",
+        "lib/net461/Npgsql.xml",
+        "lib/netcoreapp3.0/Npgsql.dll",
+        "lib/netcoreapp3.0/Npgsql.pdb",
+        "lib/netcoreapp3.0/Npgsql.xml",
+        "lib/netstandard2.0/Npgsql.dll",
+        "lib/netstandard2.0/Npgsql.pdb",
+        "lib/netstandard2.0/Npgsql.xml",
+        "lib/netstandard2.1/Npgsql.dll",
+        "lib/netstandard2.1/Npgsql.pdb",
+        "lib/netstandard2.1/Npgsql.xml",
+        "npgsql.4.1.3.nupkg.sha512",
+        "npgsql.nuspec",
+        "postgresql.png"
+      ]
+    },
+    "Roslynator.Analyzers/2.3.0": {
+      "sha512": "y3pnQzgCkv9rg3ZZpo5dS+M+K+zSKR589AEJ28Qlu4iza9U3acdoNROl1Aa81nfV7ZRe1Q7iJEVBM+YhXcnz8w==",
+      "type": "package",
+      "path": "roslynator.analyzers/2.3.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/Roslynator.CSharp.Analyzers.CodeFixes.dll",
+        "analyzers/dotnet/cs/Roslynator.CSharp.Analyzers.dll",
+        "analyzers/dotnet/cs/Roslynator.CSharp.Workspaces.dll",
+        "analyzers/dotnet/cs/Roslynator.CSharp.dll",
+        "analyzers/dotnet/cs/Roslynator.Common.dll",
+        "analyzers/dotnet/cs/Roslynator.Core.dll",
+        "analyzers/dotnet/cs/Roslynator.Workspaces.Common.dll",
+        "analyzers/dotnet/cs/Roslynator.Workspaces.Core.dll",
+        "icon.png",
+        "roslynator.analyzers.2.3.0.nupkg.sha512",
+        "roslynator.analyzers.nuspec",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "SonarAnalyzer.CSharp/8.2.0.14119": {
+      "sha512": "uq6tGr6guoDzeGjM/7kQWSTYUqv6RgPCVfzYoJg0jdVhIjNPQvSL0kMcugDziOWFP1OIv89kBD9LubVOMbCvvg==",
+      "type": "package",
+      "path": "sonaranalyzer.csharp/8.2.0.14119",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.txt",
+        "analyzers/Google.Protobuf.dll",
+        "analyzers/SonarAnalyzer.CSharp.dll",
+        "analyzers/SonarAnalyzer.dll",
+        "sonaranalyzer.csharp.8.2.0.14119.nupkg.sha512",
+        "sonaranalyzer.csharp.nuspec",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "System.Composition.AttributedModel/1.4.0": {
+      "sha512": "nJpwGXzcKLPKHx1mvXbwtxU6o2tpzR529/pBe5NerXq75R5XcZHu6yMRUHcuroRor3+YlJi6l/l0klQfTYRzlQ==",
+      "type": "package",
+      "path": "system.composition.attributedmodel/1.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/System.Composition.AttributedModel.dll",
+        "lib/netstandard2.0/System.Composition.AttributedModel.dll",
+        "lib/netstandard2.0/System.Composition.AttributedModel.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Composition.AttributedModel.dll",
+        "system.composition.attributedmodel.1.4.0.nupkg.sha512",
+        "system.composition.attributedmodel.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.6.0": {
+      "sha512": "HxozeSlipUK7dAroTYwIcGwKDeOVpQnJlpVaOkBz7CM4TsE5b/tKlQBZecTjh6FzcSbxndYaxxpsBMz+wMJeyw==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "FIS.Risk.Core >= 1.10.0",
+      "Microsoft.Extensions.DependencyInjection.Abstractions >= 3.1.0",
+      "Npgsql >= 4.1.3",
+      "Roslynator.Analyzers >= 2.3.0",
+      "SonarAnalyzer.CSharp >= 8.2.0.14119"
+    ]
+  },
+  "packageFolders": {
+    "F:\\SAAS\\nuget\\packages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "0.0.0.74441",
+    "restore": {
+      "projectUniqueName": "F:\\SAAS\\projects\\micro-services\\src\\BuildingBlocks\\Persistence\\PostgreSQL.Access\\PostgreSQL.Access.csproj",
+      "projectName": "PostgreSQL.Access",
+      "projectPath": "F:\\SAAS\\projects\\micro-services\\src\\BuildingBlocks\\Persistence\\PostgreSQL.Access\\PostgreSQL.Access.csproj",
+      "packagesPath": "F:\\SAAS\\nuget\\packages",
+      "outputPath": "F:\\SAAS\\projects\\micro-services\\src\\BuildingBlocks\\Persistence\\PostgreSQL.Access\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "F:\\SAAS\\projects\\NuGet.Config",
+        "C:\\Users\\e5606559\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "dependencies": {
+          "FIS.Risk.Core": {
+            "target": "Package",
+            "version": "[1.10.0, )"
+          },
+          "Microsoft.Extensions.DependencyInjection.Abstractions": {
+            "target": "Package",
+            "version": "[3.1.0, )"
+          },
+          "Npgsql": {
+            "target": "Package",
+            "version": "[4.1.3, )"
+          },
+          "Roslynator.Analyzers": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[2.3.0, )"
+          },
+          "SonarAnalyzer.CSharp": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[8.2.0.14119, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Runtime.linux-x64",
+            "version": "[3.1.1, 3.1.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.linux-x64",
+            "version": "[3.1.1, 3.1.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.linux-x64",
+            "version": "[3.1.1, 3.1.1]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "linux-x64": {
+        "#import": []
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+F:\SAAS\projects\micro-services\src\BuildingBlocks\Persistence\PostgreSQL.Access\obj\Debug\netcoreapp3.1\PostgreSQL.Access.csprojAssemblyReference.cache
+F:\SAAS\projects\micro-services\src\BuildingBlocks\Persistence\PostgreSQL.Access\obj\Debug\netcoreapp3.1\PostgreSQL.Access.AssemblyInfoInputs.cache
+F:\SAAS\projects\micro-services\src\BuildingBlocks\Persistence\PostgreSQL.Access\obj\Debug\netcoreapp3.1\PostgreSQL.Access.AssemblyInfo.cs
+F:\SAAS\projects\micro-services\src\BuildingBlocks\Persistence\PostgreSQL.Access\obj\Debug\netcoreapp3.1\PostgreSQL.Access.dll
+F:\SAAS\projects\micro-services\src\BuildingBlocks\Persistence\PostgreSQL.Access\obj\Debug\netcoreapp3.1\PostgreSQL.Access.pdb
