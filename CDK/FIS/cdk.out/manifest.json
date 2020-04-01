@@ -1,0 +1,1549 @@
+{
+  "version": "1.21.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "FisStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "FisStack.template.json"
+      },
+      "metadata": {
+        "/FisStack/Vpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc8378EB38",
+            "trace": [
+              "new Vpc (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1048:21)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:13:17)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/Vpc/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1Subnet5C2D37C4",
+            "trace": [
+              "new Subnet (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1373:20)",
+              "new PublicSubnet (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1588:5)",
+              "/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1239:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1221:28)",
+              "Vpc.createSubnets (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1216:12)",
+              "new Vpc (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1076:10)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:13:17)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/Vpc/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1RouteTable6C95E38E",
+            "trace": [
+              "new Subnet (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1390:19)",
+              "new PublicSubnet (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1588:5)",
+              "/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1239:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1221:28)",
+              "Vpc.createSubnets (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1216:12)",
+              "new Vpc (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1076:10)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:13:17)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/Vpc/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1RouteTableAssociation97140677",
+            "trace": [
+              "new Subnet (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1396:5)",
+              "new PublicSubnet (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1588:5)",
+              "/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1239:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1221:28)",
+              "Vpc.createSubnets (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1216:12)",
+              "new Vpc (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1076:10)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:13:17)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/Vpc/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1DefaultRoute3DA9E72A",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1412:19)",
+              "/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1092:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1091:46)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:13:17)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/Vpc/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1EIPD7E02669",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1600:21)",
+              "NatGateway.configureNat (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:145:27)",
+              "Vpc.createNatGateways (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1191:14)",
+              "new Vpc (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1098:14)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:13:17)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/Vpc/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1NATGateway4D7517AA",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1598:17)",
+              "NatGateway.configureNat (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:145:27)",
+              "Vpc.createNatGateways (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1191:14)",
+              "new Vpc (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1098:14)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:13:17)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/Vpc/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2Subnet691E08A3",
+            "trace": [
+              "new Subnet (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1373:20)",
+              "new PublicSubnet (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1588:5)",
+              "/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1239:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1221:28)",
+              "Vpc.createSubnets (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1216:12)",
+              "new Vpc (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1076:10)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:13:17)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/Vpc/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2RouteTable94F7E489",
+            "trace": [
+              "new Subnet (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1390:19)",
+              "new PublicSubnet (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1588:5)",
+              "/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1239:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1221:28)",
+              "Vpc.createSubnets (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1216:12)",
+              "new Vpc (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1076:10)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:13:17)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/Vpc/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2RouteTableAssociationDD5762D8",
+            "trace": [
+              "new Subnet (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1396:5)",
+              "new PublicSubnet (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1588:5)",
+              "/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1239:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1221:28)",
+              "Vpc.createSubnets (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1216:12)",
+              "new Vpc (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1076:10)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:13:17)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/Vpc/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2DefaultRoute97F91067",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1412:19)",
+              "/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1092:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1091:46)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:13:17)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/Vpc/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2EIP3C605A87",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1600:21)",
+              "NatGateway.configureNat (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:145:27)",
+              "Vpc.createNatGateways (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1191:14)",
+              "new Vpc (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1098:14)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:13:17)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/Vpc/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2NATGateway9182C01D",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1598:17)",
+              "NatGateway.configureNat (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:145:27)",
+              "Vpc.createNatGateways (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1191:14)",
+              "new Vpc (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1098:14)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:13:17)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/Vpc/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet1Subnet536B997A",
+            "trace": [
+              "new Subnet (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1373:20)",
+              "new PrivateSubnet (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1627:5)",
+              "/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1221:28)",
+              "Vpc.createSubnets (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1216:12)",
+              "new Vpc (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1076:10)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:13:17)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/Vpc/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet1RouteTableB2C5B500",
+            "trace": [
+              "new Subnet (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1390:19)",
+              "new PrivateSubnet (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1627:5)",
+              "/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1221:28)",
+              "Vpc.createSubnets (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1216:12)",
+              "new Vpc (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1076:10)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:13:17)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/Vpc/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet1RouteTableAssociation70C59FA6",
+            "trace": [
+              "new Subnet (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1396:5)",
+              "new PrivateSubnet (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1627:5)",
+              "/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1221:28)",
+              "Vpc.createSubnets (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1216:12)",
+              "new Vpc (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1076:10)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:13:17)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/Vpc/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet1DefaultRouteBE02A9ED",
+            "trace": [
+              "PrivateSubnet.addRoute (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1458:19)",
+              "NatGateway.configureSubnet (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:158:12)",
+              "NatGateway.configureNat (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:151:12)",
+              "Vpc.createNatGateways (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1191:14)",
+              "new Vpc (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1098:14)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:13:17)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/Vpc/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet2Subnet3788AAA1",
+            "trace": [
+              "new Subnet (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1373:20)",
+              "new PrivateSubnet (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1627:5)",
+              "/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1221:28)",
+              "Vpc.createSubnets (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1216:12)",
+              "new Vpc (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1076:10)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:13:17)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/Vpc/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet2RouteTableA678073B",
+            "trace": [
+              "new Subnet (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1390:19)",
+              "new PrivateSubnet (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1627:5)",
+              "/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1221:28)",
+              "Vpc.createSubnets (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1216:12)",
+              "new Vpc (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1076:10)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:13:17)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/Vpc/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet2RouteTableAssociationA89CAD56",
+            "trace": [
+              "new Subnet (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1396:5)",
+              "new PrivateSubnet (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1627:5)",
+              "/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1221:28)",
+              "Vpc.createSubnets (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1216:12)",
+              "new Vpc (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1076:10)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:13:17)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/Vpc/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet2DefaultRoute060D2087",
+            "trace": [
+              "PrivateSubnet.addRoute (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1458:19)",
+              "NatGateway.configureSubnet (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:158:12)",
+              "NatGateway.configureNat (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:151:12)",
+              "Vpc.createNatGateways (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1191:14)",
+              "new Vpc (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1098:14)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:13:17)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/Vpc/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcIGWD7BA715C",
+            "trace": [
+              "new Vpc (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1083:19)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:13:17)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/Vpc/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcVPCGWBF912B6E",
+            "trace": [
+              "new Vpc (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1086:19)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:13:17)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/EcsCluster/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsCluster97242B84",
+            "trace": [
+              "new Cluster (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:109:21)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:16:21)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/EcsCluster/DefaultAutoScalingGroup/InstanceSecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsClusterDefaultAutoScalingGroupInstanceSecurityGroup912E1231",
+            "trace": [
+              "new SecurityGroup (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:370:26)",
+              "new AutoScalingGroup (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.ts:422:26)",
+              "Cluster.addCapacity (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:173:30)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:17:13)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/EcsCluster/DefaultAutoScalingGroup/InstanceSecurityGroup/from FisStackLBSecurityGroupF20191F2:8080": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsClusterDefaultAutoScalingGroupInstanceSecurityGroupfromFisStackLBSecurityGroupF20191F280808AE9E816",
+            "trace": [
+              "SecurityGroup.addIngressRule (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:85:7)",
+              "SecurityGroup.addIngressRule (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:387:13)",
+              "/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:154:23",
+              "ReactiveList.forEachAndForever (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:267:7)",
+              "/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:153:45",
+              "ReactiveList.forEachAndForever (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:267:7)",
+              "Connections.allowFrom (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:152:26)",
+              "ApplicationListener.registerConnectable (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.ts:328:29)",
+              "ApplicationTargetGroup.registerListener (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.ts:159:16)",
+              "ApplicationListener.addDefaultTargetGroup (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.ts:347:17)",
+              "ApplicationListener.addTargetGroups (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.ts:218:14)",
+              "ApplicationListener.addTargets (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.ts:252:10)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:48:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/EcsCluster/DefaultAutoScalingGroup/InstanceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsClusterDefaultAutoScalingGroupInstanceRole3C026863",
+            "trace": [
+              "new Role (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-iam/lib/role.ts:309:18)",
+              "new AutoScalingGroup (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.ts:430:31)",
+              "Cluster.addCapacity (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:173:30)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:17:13)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/EcsCluster/DefaultAutoScalingGroup/InstanceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsClusterDefaultAutoScalingGroupInstanceRoleDefaultPolicy04DC6C80",
+            "trace": [
+              "new Policy (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-iam/lib/policy.ts:114:22)",
+              "Role.addToPolicy (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-iam/lib/role.ts:350:28)",
+              "AutoScalingGroup.addToRolePolicy (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.ts:594:15)",
+              "Cluster.addAutoScalingGroup (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:215:22)",
+              "Cluster.addCapacity (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:181:10)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:17:13)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/EcsCluster/DefaultAutoScalingGroup/InstanceProfile": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsClusterDefaultAutoScalingGroupInstanceProfile2CE606B3",
+            "trace": [
+              "new AutoScalingGroup (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.ts:437:24)",
+              "Cluster.addCapacity (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:173:30)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:17:13)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/EcsCluster/DefaultAutoScalingGroup/LaunchConfig": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsClusterDefaultAutoScalingGroupLaunchConfigB7E376C1",
+            "trace": [
+              "new AutoScalingGroup (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.ts:447:26)",
+              "Cluster.addCapacity (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:173:30)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:17:13)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/EcsCluster/DefaultAutoScalingGroup/ASG": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsClusterDefaultAutoScalingGroupASGC1A785DB",
+            "trace": [
+              "new AutoScalingGroup (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.ts:523:29)",
+              "Cluster.addCapacity (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:173:30)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:17:13)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/EcsCluster/DefaultAutoScalingGroup/DrainECSHook/Function/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsClusterDefaultAutoScalingGroupDrainECSHookFunctionServiceRole94543EDA",
+            "trace": [
+              "new Role (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-iam/lib/role.ts:309:18)",
+              "new Function (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-lambda/lib/function.ts:445:31)",
+              "new InstanceDrainHook (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/drain-hook/instance-drain-hook.ts:52:16)",
+              "Cluster.addAutoScalingGroup (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:233:7)",
+              "Cluster.addCapacity (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:181:10)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:17:13)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/EcsCluster/DefaultAutoScalingGroup/DrainECSHook/Function/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsClusterDefaultAutoScalingGroupDrainECSHookFunctionServiceRoleDefaultPolicyA45BF396",
+            "trace": [
+              "new Policy (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-iam/lib/policy.ts:114:22)",
+              "Role.addToPolicy (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-iam/lib/role.ts:350:28)",
+              "Function.addToRolePolicy (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:221:15)",
+              "new InstanceDrainHook (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/drain-hook/instance-drain-hook.ts:74:8)",
+              "Cluster.addAutoScalingGroup (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:233:7)",
+              "Cluster.addCapacity (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:181:10)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:17:13)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/EcsCluster/DefaultAutoScalingGroup/DrainECSHook/Function/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsClusterDefaultAutoScalingGroupDrainECSHookFunctionE17A5F5E",
+            "trace": [
+              "new Function (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-lambda/lib/function.ts:460:35)",
+              "new InstanceDrainHook (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/drain-hook/instance-drain-hook.ts:52:16)",
+              "Cluster.addAutoScalingGroup (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:233:7)",
+              "Cluster.addCapacity (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:181:10)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:17:13)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/EcsCluster/DefaultAutoScalingGroup/DrainECSHook/Function/AllowInvoke:FisStackEcsClusterDefaultAutoScalingGroupLifecycleHookDrainHookTopicB57DD380": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsClusterDefaultAutoScalingGroupDrainECSHookFunctionAllowInvokeFisStackEcsClusterDefaultAutoScalingGroupLifecycleHookDrainHookTopicB57DD38083F04BDF",
+            "trace": [
+              "Function.addPermission (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:203:5)",
+              "LambdaSubscription.bind (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-sns-subscriptions/lib/lambda.ts:27:13)",
+              "Topic.addSubscription (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-sns/lib/topic-base.ts:59:45)",
+              "FunctionHook.bind (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-autoscaling-hooktargets/lib/lambda-hook.ts:19:11)",
+              "new LifecycleHook (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-autoscaling/lib/lifecycle-hook.ts:103:50)",
+              "AutoScalingGroup.addLifecycleHook (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.ts:245:12)",
+              "new InstanceDrainHook (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/drain-hook/instance-drain-hook.ts:65:28)",
+              "Cluster.addAutoScalingGroup (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:233:7)",
+              "Cluster.addCapacity (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:181:10)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:17:13)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/EcsCluster/DefaultAutoScalingGroup/DrainECSHook/Function/Topic/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsClusterDefaultAutoScalingGroupDrainECSHookFunctionTopic8F34E394",
+            "trace": [
+              "new Subscription (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-sns/lib/subscription.ts:89:5)",
+              "Topic.addSubscription (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-sns/lib/topic-base.ts:73:5)",
+              "FunctionHook.bind (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-autoscaling-hooktargets/lib/lambda-hook.ts:19:11)",
+              "new LifecycleHook (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-autoscaling/lib/lifecycle-hook.ts:103:50)",
+              "AutoScalingGroup.addLifecycleHook (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.ts:245:12)",
+              "new InstanceDrainHook (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/drain-hook/instance-drain-hook.ts:65:28)",
+              "Cluster.addAutoScalingGroup (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:233:7)",
+              "Cluster.addCapacity (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:181:10)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:17:13)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/EcsCluster/DefaultAutoScalingGroup/LifecycleHookDrainHook/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsClusterDefaultAutoScalingGroupLifecycleHookDrainHookRoleA38EC83B",
+            "trace": [
+              "new Role (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-iam/lib/role.ts:309:18)",
+              "new LifecycleHook (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-autoscaling/lib/lifecycle-hook.ts:99:31)",
+              "AutoScalingGroup.addLifecycleHook (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.ts:245:12)",
+              "new InstanceDrainHook (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/drain-hook/instance-drain-hook.ts:65:28)",
+              "Cluster.addAutoScalingGroup (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:233:7)",
+              "Cluster.addCapacity (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:181:10)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:17:13)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/EcsCluster/DefaultAutoScalingGroup/LifecycleHookDrainHook/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsClusterDefaultAutoScalingGroupLifecycleHookDrainHookRoleDefaultPolicy75002F88",
+            "trace": [
+              "new Policy (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-iam/lib/policy.ts:114:22)",
+              "Role.addToPolicy (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-iam/lib/role.ts:350:28)",
+              "Function.addToPrincipal (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-iam/lib/grant.ts:147:61)",
+              "Function.addToPrincipalOrResource (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-iam/lib/grant.ts:117:26)",
+              "Topic.grantPublish (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-sns/lib/topic-base.ts:100:22)",
+              "TopicHook.bind (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-autoscaling-hooktargets/lib/topic-hook.ts:13:16)",
+              "FunctionHook.bind (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-autoscaling-hooktargets/lib/lambda-hook.ts:20:33)",
+              "new LifecycleHook (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-autoscaling/lib/lifecycle-hook.ts:103:50)",
+              "AutoScalingGroup.addLifecycleHook (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.ts:245:12)",
+              "new InstanceDrainHook (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/drain-hook/instance-drain-hook.ts:65:28)",
+              "Cluster.addAutoScalingGroup (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:233:7)",
+              "Cluster.addCapacity (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:181:10)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:17:13)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/EcsCluster/DefaultAutoScalingGroup/LifecycleHookDrainHook/Topic/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsClusterDefaultAutoScalingGroupLifecycleHookDrainHookTopicACD2D4A4",
+            "trace": [
+              "new Topic (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-sns/lib/topic.ts:61:22)",
+              "FunctionHook.bind (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-autoscaling-hooktargets/lib/lambda-hook.ts:18:19)",
+              "new LifecycleHook (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-autoscaling/lib/lifecycle-hook.ts:103:50)",
+              "AutoScalingGroup.addLifecycleHook (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.ts:245:12)",
+              "new InstanceDrainHook (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/drain-hook/instance-drain-hook.ts:65:28)",
+              "Cluster.addAutoScalingGroup (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:233:7)",
+              "Cluster.addCapacity (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:181:10)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:17:13)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/EcsCluster/DefaultAutoScalingGroup/LifecycleHookDrainHook/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsClusterDefaultAutoScalingGroupLifecycleHookDrainHookFFA63029",
+            "trace": [
+              "new LifecycleHook (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-autoscaling/lib/lifecycle-hook.ts:105:22)",
+              "AutoScalingGroup.addLifecycleHook (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.ts:245:12)",
+              "new InstanceDrainHook (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/drain-hook/instance-drain-hook.ts:65:28)",
+              "Cluster.addAutoScalingGroup (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:233:7)",
+              "Cluster.addCapacity (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:181:10)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:17:13)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/SsmParameterValue:--aws--service--ecs--optimized-ami--amazon-linux-2--recommended--image_id:C96584B6-F00A-464E-AD19-53AFF4B05118.Parameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SsmParameterValueawsserviceecsoptimizedamiamazonlinux2recommendedimageidC96584B6F00A464EAD1953AFF4B05118Parameter",
+            "trace": [
+              "Function.fromStringParameterAttributes (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ssm/lib/parameter.ts:327:9)",
+              "Function.valueForTypedStringParameter (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ssm/lib/parameter.ts:397:17)",
+              "EcsOptimizedAmi.getImage (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:380:37)",
+              "new AutoScalingGroup (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.ts:442:44)",
+              "Cluster.addCapacity (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:173:30)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:17:13)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/TaskDef/TaskRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TaskDefTaskRole1EDB4A67",
+            "trace": [
+              "new Role (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-iam/lib/role.ts:309:18)",
+              "new TaskDefinition (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.ts:276:39)",
+              "new Ec2TaskDefinition (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/ec2/ec2-task-definition.ts:59:5)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:22:28)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/TaskDef/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TaskDef54694570",
+            "trace": [
+              "new TaskDefinition (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.ts:280:21)",
+              "new Ec2TaskDefinition (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/ec2/ec2-task-definition.ts:59:5)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:22:28)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/Service/Service": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceD69D759B",
+            "trace": [
+              "new BaseService (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.ts:321:21)",
+              "new Ec2Service (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ecs/lib/ec2/ec2-service.ts:138:5)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:35:21)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/LB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LB8A12904C",
+            "trace": [
+              "new BaseLoadBalancer (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-load-balancer.ts:137:22)",
+              "new ApplicationLoadBalancer (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.ts:62:5)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:41:16)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/LB/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LBSecurityGroup8A41EA2B",
+            "trace": [
+              "new SecurityGroup (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:370:26)",
+              "new ApplicationLoadBalancer (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.ts:68:49)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:41:16)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/LB/SecurityGroup/to FisStackEcsClusterDefaultAutoScalingGroupInstanceSecurityGroup9BC31C89:8080": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LBSecurityGrouptoFisStackEcsClusterDefaultAutoScalingGroupInstanceSecurityGroup9BC31C898080CF9F2B4B",
+            "trace": [
+              "SecurityGroup.addEgressRule (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:103:7)",
+              "SecurityGroup.addEgressRule (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:416:13)",
+              "/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:131:23",
+              "ReactiveList.forEachAndForever (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:267:7)",
+              "/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:130:45",
+              "ReactiveList.forEachAndForever (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:267:7)",
+              "Connections.allowTo (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:129:26)",
+              "Connections.allowFrom (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:161:25)",
+              "ApplicationListener.registerConnectable (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.ts:328:29)",
+              "ApplicationTargetGroup.registerListener (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.ts:159:16)",
+              "ApplicationListener.addDefaultTargetGroup (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.ts:347:17)",
+              "ApplicationListener.addTargetGroups (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.ts:218:14)",
+              "ApplicationListener.addTargets (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.ts:252:10)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:48:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/LB/PublicListener/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LBPublicListener6E1F3D94",
+            "trace": [
+              "new BaseListener (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-listener.ts:19:22)",
+              "new ApplicationListener (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.ts:125:5)",
+              "ApplicationLoadBalancer.addListener (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.ts:83:12)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:45:25)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/LB/PublicListener/ECSGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LBPublicListenerECSGroupD6A32205",
+            "trace": [
+              "new TargetGroupBase (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-target-group.ts:226:21)",
+              "new ApplicationTargetGroup (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.ts:93:5)",
+              "ApplicationListener.addTargets (/Users/demiveda/git/FIS/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.ts:240:19)",
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:48:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/FisStack/LoadBalancerDNS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LoadBalancerDNS",
+            "trace": [
+              "new FisStack (/Users/demiveda/git/FIS/lib/fis-stack.ts:62:5)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/bin/fis.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Module.m._compile (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/demiveda/git/FIS/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/demiveda/git/FIS/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1128:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)",
+              "Module.load (internal/modules/cjs/loader.js:983:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:891:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "libraries": {
+      "@aws-cdk/core": "1.27.0",
+      "@aws-cdk/cx-api": "1.27.0",
+      "@aws-cdk/aws-ec2": "1.27.0",
+      "@aws-cdk/aws-iam": "1.27.0",
+      "@aws-cdk/region-info": "1.27.0",
+      "@aws-cdk/aws-ssm": "1.27.0",
+      "@aws-cdk/aws-logs": "1.27.0",
+      "@aws-cdk/aws-cloudwatch": "1.27.0",
+      "@aws-cdk/aws-s3": "1.27.0",
+      "@aws-cdk/aws-events": "1.27.0",
+      "@aws-cdk/aws-kms": "1.27.0",
+      "@aws-cdk/aws-ecs": "1.27.0",
+      "@aws-cdk/aws-applicationautoscaling": "1.27.0",
+      "@aws-cdk/aws-autoscaling-common": "1.27.0",
+      "@aws-cdk/aws-elasticloadbalancingv2": "1.27.0",
+      "@aws-cdk/aws-servicediscovery": "1.27.0",
+      "@aws-cdk/aws-ecr-assets": "1.27.0",
+      "@aws-cdk/assets": "1.27.0",
+      "@aws-cdk/aws-ecr": "1.27.0",
+      "@aws-cdk/aws-autoscaling": "1.27.0",
+      "@aws-cdk/aws-autoscaling-hooktargets": "1.27.0",
+      "@aws-cdk/aws-sns": "1.27.0",
+      "@aws-cdk/aws-sns-subscriptions": "1.27.0",
+      "@aws-cdk/aws-lambda": "1.27.0",
+      "@aws-cdk/aws-sqs": "1.27.0",
+      "@aws-cdk/aws-s3-assets": "1.27.0",
+      "jsii-runtime": "node.js/v13.3.0"
+    }
+  }
+}
